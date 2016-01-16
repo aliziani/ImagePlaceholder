@@ -10,6 +10,7 @@ Angular module to place a placeholder gif or class for images
 ## Supported Configurations
 
 The module can be initialized on 2 ways:
+
 1. By constant __ImgPlhdrCst__ : ``low priority``
 2. Directly as a directive parameter : ``high priority``
 
