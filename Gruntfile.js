@@ -14,6 +14,7 @@ module.exports = function(grunt) {
         dist: {
             src: [
                 'src/imagePlaceholder.md.js',
+                'src/imagePlaceholder.cfg.js',
                 'src/imagePlaceholder.drv.js'
             ],
             dest: 'dist/imagePlacehoder.js'
