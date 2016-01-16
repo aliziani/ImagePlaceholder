@@ -1,4 +1,4 @@
-function ImgPlaceholder($compile){
+function ImgPlaceholder($compile, ImgPlhdrCst){
   return {
         restrict: 'A',
         scope: {
@@ -8,14 +8,7 @@ function ImgPlaceholder($compile){
             // hide current image
             element[0].style.display = 'none';
             // init configuration
-            var config = scope.config ||
-                         {
-                           loading:{
-                              imageUrl:'#',
-                              style:null,
-                              class:null
-                            }
-                          };
+            var config = scope.config || ImgPlhdrCst;
             // Add spinner next to the image
             angular
               .element(element[0])
