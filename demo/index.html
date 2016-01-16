@@ -1,0 +1,15 @@
+<html ng-app="app">
+  <head>
+    <title>Image placeholder</title>
+    <script src="js/vendor/angular.js"></script>
+    <script src="js/vendor/imagePlacehoder.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-controller="ctrl as ctrlvm">
+    <h1>This app will load <span ng-bind="ctrlvm.images.length"></span> images</h1>
+
+    <div ng-repeat="img in ctrlvm.images" >
+        <img ng-src="{{img.url}}" image-placeholder="ctrlvm.config" style="height:50px;width:50px;float:left;"/>
+    </div>
+  </body>
+</html>
