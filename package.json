@@ -1,0 +1,25 @@
+{
+  "name": "imageplaceholder",
+  "version": "0.0.1",
+  "description": "Angular module to place a placeholder gif or class for images",
+  "main": "dist/imagePlaceholder.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliziani/ImagePlaceholder.git"
+  },
+  "keywords": [
+    "angular",
+    "module",
+    "image",
+    "placeholder"
+  ],
+  "author": "aliz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aliziani/ImagePlaceholder/issues"
+  },
+  "homepage": "https://github.com/aliziani/ImagePlaceholder#readme"
+}
