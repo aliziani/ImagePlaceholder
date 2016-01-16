@@ -11,9 +11,20 @@ function Ctrl($scope){
     }
 
   this.images = images;
-  this.config = config;
+  this.config = config; // has a higher priority than the config
+}
+
+function config (ImgPlhdrCst) {
+    // define a global config
+    ImgPlhdrCst = config = {
+                            loading:{
+                              imageUrl: 'https://s-media-cache-ak0.pinimg.com/originals/e0/f5/a5/e0f5a5f8c2e378df4fddd75e26e9a5a3.gif',
+                              style:'height:50px;width:50px;float:left;'
+                            }
+                          };
 }
 
 angular
   .module('app',['imagePlaceholder'])
+  .config(config)
   .controller('ctrl',Ctrl);
